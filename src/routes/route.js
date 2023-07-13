@@ -31,16 +31,16 @@ export const ROUTES = [
         element: <Dashboard />,
       },
       {
-        path: "Coins",
+        path: "coins",
         element: <Coins />,
       },
       {
         path: "CoinDetail",
-        element: <CoinDetail/>,
+        element: <CoinDetail />,
       },
       {
-        path: "CoinDetail:id",
-        element: <CoinDetail/>,
+        path: "CoinDetail/:id",
+        element: <CoinDetail />,
       },
     ],
   },

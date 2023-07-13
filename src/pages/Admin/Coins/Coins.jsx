@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Coins = () => {
   const [data, setData] = useState([]);
@@ -27,12 +28,12 @@ const Coins = () => {
             <tr key={index}>
               <th scope="row">{coin.symbol}</th>
               <td>
-                <img style={{width:"60px"}} src={coin.image} alt="" />
+                <img style={{ width: "60px" }} src={coin.image} alt="" />
               </td>
               <td>{coin.name}</td>
               <td>{coin.current_price}</td>
               <td>
-                <Link to={`/Coins/${coin.id}`}>Go Detail</Link>
+                <Link to={`admin/coins/${coin.id}`}>Go Detail</Link>
               </td>
             </tr>
           );
